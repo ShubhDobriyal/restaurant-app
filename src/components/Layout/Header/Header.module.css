@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  border-bottom: 1px solid #1e1e1e;
+  z-index: 10;
+}
+
+.main-image {
+  width: 100%;
+  height: 36rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header h1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 567px) {
+  .main-image img {
+    transform: rotateZ(-5deg) translateY(-8rem) translateX(-1rem);
+  }
+}
